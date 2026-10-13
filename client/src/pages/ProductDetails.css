@@ -1,0 +1,209 @@
+.product-page {
+  min-height: 100vh;
+  background: #f7f7f7;
+}
+
+.product-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 25px;
+}
+
+.product-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.product-image-box {
+  min-height: 450px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-large-icon {
+  font-size: 180px;
+}
+
+.product-category {
+  color: #777;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.product-info h1 {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.product-description {
+  color: #777;
+  line-height: 1.6;
+}
+
+.product-price-box {
+  margin: 25px 0;
+}
+
+.product-price-box strong {
+  font-size: 30px;
+}
+
+.product-price-box span {
+  color: #777;
+}
+
+.rental-date-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.rental-date-box h2 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.date-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.date-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.date-field label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.date-field input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.rental-summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.rental-summary div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.rental-summary span {
+  color: #777;
+  font-size: 12px;
+}
+
+.product-error {
+  margin-top: 15px;
+  padding: 12px;
+  background: #ffe8e8;
+  color: #c00;
+  border-radius: 8px;
+}
+
+.product-success {
+  margin-top: 15px;
+  padding: 12px;
+  background: #e7f7eb;
+  color: #16803c;
+  border-radius: 8px;
+}
+
+.product-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.add-cart-btn,
+.view-cart-btn {
+  padding: 14px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.add-cart-btn {
+  background: #111;
+  color: white;
+  border: none;
+}
+
+.view-cart-btn {
+  background: white;
+  color: #111;
+  border: 1px solid #ddd;
+}
+
+.product-features {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #555;
+  font-size: 14px;
+}
+
+.product-features span {
+  margin-right: 8px;
+}
+
+.product-not-found {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.primary-btn {
+  display: inline-block;
+  background: #111;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .product-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .product-image-box {
+    min-height: 300px;
+  }
+
+  .product-large-icon {
+    font-size: 120px;
+  }
+
+  .product-info h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .date-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .product-buttons {
+    flex-direction: column;
+  }
+}

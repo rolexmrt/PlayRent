@@ -1,0 +1,594 @@
+/* =========================
+   ORDER CONFIRMATION PAGE
+========================= */
+
+.confirmation-page {
+  min-height: 100vh;
+  background: #f7f7f7;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.confirmation-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 55px 25px 80px;
+}
+
+
+/* =========================
+   SUCCESS SECTION
+========================= */
+
+.confirmation-success {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.success-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  background: #111;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.success-small {
+  margin: 0 0 8px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #777;
+}
+
+.confirmation-success h1 {
+  margin: 0 0 12px;
+
+  font-size: 40px;
+}
+
+.success-message {
+  max-width: 600px;
+  margin: 0 auto;
+
+  color: #777;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   ORDER NUMBER
+========================= */
+
+.order-number-card {
+  background: white;
+
+  padding: 20px 25px;
+
+  border-radius: 12px;
+
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-number-card div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.order-number-card span {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #888;
+}
+
+.order-number-card strong {
+  font-size: 20px;
+}
+
+.confirmed-badge {
+  background: #e5f7e9;
+  color: #16803c;
+
+  padding: 8px 15px;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   LAYOUT
+========================= */
+
+.confirmation-layout {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+
+  gap: 25px;
+
+  align-items: start;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.confirmation-card {
+  background: white;
+
+  border-radius: 15px;
+
+  padding: 25px;
+
+  margin-bottom: 20px;
+}
+
+.confirmation-card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.confirmation-card-title h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.confirmation-card-title span {
+  color: #888;
+  font-size: 13px;
+}
+
+
+/* =========================
+   ITEMS
+========================= */
+
+.confirmation-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.confirmation-item {
+  display: grid;
+
+  grid-template-columns: 65px 1fr auto;
+
+  gap: 15px;
+
+  align-items: center;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid #eee;
+}
+
+.confirmation-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.confirmation-item:first-child {
+  padding-top: 0;
+}
+
+.confirmation-item-icon {
+  width: 65px;
+  height: 65px;
+
+  border-radius: 10px;
+
+  background: #f3f3f3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 32px;
+}
+
+.confirmation-item-info h3 {
+  margin: 0 0 5px;
+  font-size: 15px;
+}
+
+.confirmation-item-info > p {
+  margin: 0 0 8px;
+  color: #888;
+  font-size: 12px;
+}
+
+.item-rental-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.item-rental-dates span {
+  font-size: 11px;
+  color: #777;
+}
+
+.confirmation-item-price {
+  text-align: right;
+}
+
+.confirmation-item-price span {
+  display: block;
+
+  color: #888;
+
+  font-size: 11px;
+
+  margin-bottom: 5px;
+}
+
+.confirmation-item-price strong {
+  font-size: 16px;
+}
+
+
+/* =========================
+   DELIVERY
+========================= */
+
+.delivery-details {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.delivery-icon {
+  width: 45px;
+  height: 45px;
+
+  border-radius: 8px;
+
+  background: #f3f3f3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+
+  flex-shrink: 0;
+}
+
+.delivery-details strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.delivery-details p {
+  margin: 4px 0;
+
+  color: #777;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   PAYMENT
+========================= */
+
+.payment-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.payment-details-icon {
+  width: 45px;
+  height: 45px;
+
+  border-radius: 8px;
+
+  background: #f3f3f3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+}
+
+.payment-details strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.payment-details p {
+  margin: 0;
+
+  color: #888;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+.confirmation-summary {
+  background: white;
+
+  border-radius: 15px;
+
+  padding: 25px;
+
+  position: sticky;
+  top: 20px;
+}
+
+.confirmation-summary h2 {
+  margin: 0 0 25px;
+
+  font-size: 21px;
+}
+
+.summary-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+}
+
+.summary-row span {
+  color: #777;
+}
+
+.summary-row strong {
+  font-size: 14px;
+}
+
+.summary-divider {
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+.summary-total-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.summary-total-row span {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.summary-total-row strong {
+  font-size: 25px;
+}
+
+
+/* =========================
+   NOTE
+========================= */
+
+.confirmation-note {
+  display: flex;
+
+  gap: 10px;
+
+  background: #f7f7f7;
+
+  border-radius: 10px;
+
+  padding: 15px;
+
+  margin-bottom: 20px;
+}
+
+.confirmation-note span {
+  font-weight: 700;
+}
+
+.confirmation-note p {
+  margin: 0;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+
+  color: #777;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.my-rentals-btn {
+  display: block;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  padding: 14px;
+
+  border-radius: 8px;
+
+  background: #111;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  margin-bottom: 12px;
+}
+
+.my-rentals-btn:hover {
+  background: #333;
+}
+
+.continue-shopping-btn {
+  display: block;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  padding: 13px;
+
+  border-radius: 8px;
+
+  border: 1px solid #ddd;
+
+  color: #222;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.continue-shopping-btn:hover {
+  background: #f5f5f5;
+}
+
+
+/* =========================
+   EMPTY
+========================= */
+
+.confirmation-empty {
+  min-height: 70vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 30px;
+}
+
+.confirmation-empty-icon {
+  font-size: 65px;
+
+  margin-bottom: 20px;
+}
+
+.confirmation-empty h1 {
+  margin: 0 0 10px;
+}
+
+.confirmation-empty p {
+  color: #777;
+
+  margin-bottom: 25px;
+}
+
+.confirmation-primary-btn {
+  display: inline-block;
+
+  background: #111;
+  color: white;
+
+  text-decoration: none;
+
+  padding: 13px 22px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 850px) {
+
+  .confirmation-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .confirmation-summary {
+    position: static;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .confirmation-container {
+    padding: 40px 15px;
+  }
+
+  .confirmation-success h1 {
+    font-size: 30px;
+  }
+
+  .order-number-card {
+    padding: 18px;
+  }
+
+  .confirmation-item {
+    grid-template-columns: 55px 1fr;
+  }
+
+  .confirmation-item-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 25px;
+  }
+
+  .confirmation-item-price {
+    grid-column: 2;
+    text-align: left;
+  }
+
+}

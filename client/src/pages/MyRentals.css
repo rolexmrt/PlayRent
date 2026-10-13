@@ -1,0 +1,456 @@
+/* =========================
+   MY RENTALS
+========================= */
+
+.my-rentals-page {
+  min-height: 100vh;
+  background: #f7f7f7;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.rentals-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 55px 25px 80px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.rentals-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 35px;
+}
+
+.rentals-header p {
+  margin: 0 0 7px;
+
+  color: #777;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.rentals-header h1 {
+  margin: 0 0 8px;
+
+  font-size: 38px;
+}
+
+.rentals-header span {
+  color: #777;
+  font-size: 14px;
+}
+
+.rent-more-btn {
+  background: #111;
+  color: white;
+
+  padding: 13px 20px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.rent-more-btn:hover {
+  background: #333;
+}
+
+
+/* =========================
+   ORDER CARD
+========================= */
+
+.rental-order-card {
+  background: white;
+
+  border-radius: 15px;
+
+  margin-bottom: 20px;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   ORDER HEADER
+========================= */
+
+.rental-order-header {
+  padding: 20px 25px;
+
+  border-bottom: 1px solid #eee;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rental-order-header div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.order-label {
+  color: #888;
+
+  font-size: 10px;
+
+  letter-spacing: 1px;
+}
+
+.rental-order-header strong {
+  font-size: 18px;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+  padding: 7px 14px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.status.confirmed {
+  background: #e7f7eb;
+  color: #16803c;
+}
+
+.status.cancelled {
+  background: #ffe8e8;
+  color: #c62828;
+}
+
+
+/* =========================
+   RENTAL ITEMS
+========================= */
+
+.rental-items {
+  padding: 5px 25px;
+}
+
+.rental-item {
+  display: grid;
+
+  grid-template-columns: 65px 1fr auto;
+
+  gap: 15px;
+
+  align-items: center;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid #eee;
+}
+
+.rental-item:last-child {
+  border-bottom: none;
+}
+
+.rental-item-icon {
+  width: 65px;
+  height: 65px;
+
+  background: #f3f3f3;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 32px;
+}
+
+.rental-item-details h3 {
+  margin: 0 0 5px;
+
+  font-size: 16px;
+}
+
+.rental-item-details p {
+  margin: 0 0 10px;
+
+  color: #888;
+
+  font-size: 12px;
+}
+
+.rental-dates {
+  display: flex;
+
+  gap: 18px;
+
+  flex-wrap: wrap;
+}
+
+.rental-dates span {
+  color: #777;
+
+  font-size: 11px;
+}
+
+.rental-dates strong {
+  color: #444;
+}
+
+.rental-item-price {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   DELIVERY
+========================= */
+
+.rental-delivery {
+  margin: 0 25px;
+
+  padding: 18px;
+
+  background: #f7f7f7;
+
+  border-radius: 10px;
+}
+
+.delivery-title {
+  font-size: 13px;
+
+  font-weight: 700;
+
+  margin-bottom: 8px;
+}
+
+.rental-delivery p {
+  margin: 3px 0;
+
+  color: #777;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   ORDER FOOTER
+========================= */
+
+.rental-order-footer {
+  margin-top: 20px;
+
+  padding: 20px 25px;
+
+  border-top: 1px solid #eee;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.rental-total {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.rental-total span {
+  color: #777;
+
+  font-size: 13px;
+}
+
+.rental-total strong {
+  font-size: 22px;
+}
+
+
+/* =========================
+   CANCEL
+========================= */
+
+.cancel-rental-btn {
+  background: white;
+
+  color: #c62828;
+
+  border: 1px solid #e0b5b5;
+
+  border-radius: 8px;
+
+  padding: 10px 16px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.cancel-rental-btn:hover {
+  background: #fff1f1;
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.rentals-empty {
+  min-height: 70vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 30px;
+}
+
+.empty-rentals-icon {
+  font-size: 70px;
+
+  margin-bottom: 20px;
+}
+
+.rentals-empty h1 {
+  margin: 0 0 10px;
+
+  font-size: 32px;
+}
+
+.rentals-empty p {
+  color: #777;
+
+  margin-bottom: 25px;
+}
+
+.browse-equipment-btn {
+  background: #111;
+
+  color: white;
+
+  text-decoration: none;
+
+  padding: 13px 22px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.browse-equipment-btn:hover {
+  background: #333;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 750px) {
+
+  .rentals-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .rental-item {
+    grid-template-columns: 55px 1fr;
+  }
+
+  .rental-item-icon {
+    width: 55px;
+    height: 55px;
+
+    font-size: 25px;
+  }
+
+  .rental-item-price {
+    grid-column: 2;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .rentals-container {
+    padding: 40px 15px;
+  }
+
+  .rentals-header h1 {
+    font-size: 30px;
+  }
+
+  .rental-order-header {
+    padding: 18px;
+  }
+
+  .rental-items {
+    padding: 5px 18px;
+  }
+
+  .rental-order-footer {
+    padding: 18px;
+
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .rental-delivery {
+    margin: 0 18px;
+  }
+
+  .rental-total {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+  .cancel-rental-btn {
+    width: 100%;
+  }
+
+}

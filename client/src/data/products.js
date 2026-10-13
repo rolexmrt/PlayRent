@@ -1,0 +1,108 @@
+const products = [
+  {
+    id: 1,
+    name: "Nike Football Boots",
+    sport: "Football",
+    category: "Footwear",
+    price: 150,
+    deposit: 500,
+    sizes: [7, 8, 9, 10, 11],
+    icon: "👟",
+    description:
+      "Comfortable football boots suitable for turf and ground matches.",
+    available: 5,
+  },
+  {
+    id: 2,
+    name: "Match Football",
+    sport: "Football",
+    category: "Ball",
+    price: 80,
+    deposit: 200,
+    sizes: [],
+    icon: "⚽",
+    description:
+      "Professional quality football suitable for turf and outdoor matches.",
+    available: 10,
+  },
+  {
+    id: 3,
+    name: "Goalkeeper Gloves",
+    sport: "Football",
+    category: "Accessories",
+    price: 120,
+    deposit: 300,
+    sizes: [7, 8, 9, 10],
+    icon: "🧤",
+    description:
+      "Grip-enhanced goalkeeper gloves for match and training use.",
+    available: 6,
+  },
+  {
+    id: 4,
+    name: "Cricket Bat",
+    sport: "Cricket",
+    category: "Bat",
+    price: 200,
+    deposit: 800,
+    sizes: [],
+    icon: "🏏",
+    description:
+      "English willow cricket bat suitable for casual and competitive games.",
+    available: 4,
+  },
+  {
+    id: 5,
+    name: "Cricket Helmet",
+    sport: "Cricket",
+    category: "Protection",
+    price: 150,
+    deposit: 500,
+    sizes: ["M", "L"],
+    icon: "🪖",
+    description:
+      "Protective cricket helmet with adjustable fitting.",
+    available: 5,
+  },
+  {
+    id: 6,
+    name: "Cricket Batting Gloves",
+    sport: "Cricket",
+    category: "Gloves",
+    price: 100,
+    deposit: 300,
+    sizes: ["S", "M", "L"],
+    icon: "🧤",
+    description:
+      "Comfortable batting gloves providing protection and grip.",
+    available: 8,
+  },
+  {
+    id: 7,
+    name: "Yonex Badminton Racket",
+    sport: "Badminton",
+    category: "Racket",
+    price: 100,
+    deposit: 300,
+    sizes: [],
+    icon: "🏸",
+    description:
+      "Lightweight badminton racket suitable for recreational play.",
+    available: 10,
+  },
+  {
+    id: 8,
+    name: "Badminton Shuttlecock",
+    sport: "Badminton",
+    category: "Shuttle",
+    price: 50,
+    deposit: 100,
+    sizes: [],
+    icon: "🏸",
+    description:
+      "Pack of quality shuttlecocks for badminton games.",
+    available: 20,
+  },
+];
+
+export default products;
